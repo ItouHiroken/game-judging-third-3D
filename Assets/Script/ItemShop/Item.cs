@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Item : MonoBehaviour
+[System.Serializable]
+public struct Item
 {
     /// <summary>ƒAƒCƒeƒ€‚Ì ID</summary>
     public int Id;
