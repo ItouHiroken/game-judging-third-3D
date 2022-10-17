@@ -6,15 +6,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ChanpionStatus : MonoBehaviour
 {
-    public string ChanpionName { get; set; }
+    public string ChanpionName { get => _chanpionName; set => _chanpionName = value; }
     [SerializeField] private string _chanpionName;
-    public float AttackDamage { get; set; }
+    public float AttackDamage { get => _attackDamage; set => _attackDamage = value; }
     [SerializeField] private float _attackDamage;
-    public float AttackSpeed { get; set; }
+    public float AttackSpeed { get => _attackSpeed; set => _attackSpeed = value; }
     [SerializeField] private float _attackSpeed;
-    public float AbilityPower { get; set; }
+    public float AbilityPower { get => _abilityPower; set => _abilityPower = value; }
     [SerializeField] private float _abilityPower;
-    public float CriticalStrikeChance { get; set; }
+    public float CriticalStrikeChance { get => _criticalStrikeChance; set => _criticalStrikeChance = value; }
     [SerializeField] private float _criticalStrikeChance;
     public float CriticalStrikeDamage { get; set; }
     [SerializeField] private float _criticalStrikeDamage;
@@ -92,7 +92,7 @@ public class ChanpionStatus : MonoBehaviour
 
     public List<bool> _skillCD = new(4);
 
-    
+
     public async void Regeneration()
     {
         await Task.Delay(TimeSpan.FromSeconds(1));
