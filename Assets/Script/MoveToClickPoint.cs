@@ -22,6 +22,7 @@ public class MoveToClickPoint : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
             {
+                //if(TryGetComponent<TestChanpion>())
                 _agent.destination = hit.point;
             }
         }

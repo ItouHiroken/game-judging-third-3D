@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Camera1 : MonoBehaviour
+[CreateAssetMenu(fileName = "Tower", menuName = "ScriptableObjects/CreateEnemyParamAsset")]
+public class Tower : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
